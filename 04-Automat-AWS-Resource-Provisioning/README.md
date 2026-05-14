@@ -35,13 +35,17 @@ aws-automation-boto3/
 
 │ └── create_ec2.py
 │
+
 ├── s3/
 │ └── create_bucket.py
 │
+
 ├── iam/
 │ └── create_user.py
 │
+
 ├── requirements.txt
+
 └── README.md
 
 ## ⚙️ Setup Instructions
