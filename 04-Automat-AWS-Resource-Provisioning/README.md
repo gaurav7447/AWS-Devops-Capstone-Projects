@@ -31,17 +31,21 @@ To automate AWS infrastructure provisioning and understand how DevOps engineers 
 aws-automation-boto3/
 
 │
+
 ├── ec2/
 
-│ └── create_ec2.py
+│ 
+└── create_ec2.py
 │
 
 ├── s3/
-│ └── create_bucket.py
+│ 
+└── create_bucket.py
 │
 
 ├── iam/
-│ └── create_user.py
+│ 
+└── create_user.py
 │
 
 ├── requirements.txt
