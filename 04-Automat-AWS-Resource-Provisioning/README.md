@@ -29,8 +29,10 @@ To automate AWS infrastructure provisioning and understand how DevOps engineers 
 
 ## 📁 Project Structure
 aws-automation-boto3/
+
 │
 ├── ec2/
+
 │ └── create_ec2.py
 │
 ├── s3/
