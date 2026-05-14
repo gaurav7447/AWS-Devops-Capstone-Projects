@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multi-Tier AWS App</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 24px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Multi-Tier Web Application</h1>
+
+    <button onclick="loadMessage()">
+        Get Backend Message
+    </button>
+
+    <p id="output"></p>
+
+    <script>
+        async function loadMessage() {
+
+            try {
+
+                const response = await fetch("http://13.203.97.240:5000/");
+
+                const data = await response.text();
+
+                document.getElementById("output").innerHTML = data;
+
+            } catch (error) {
+
+                document.getElementById("output").innerHTML =
+                    "Error connecting backend";
+
+                console.log(error);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
