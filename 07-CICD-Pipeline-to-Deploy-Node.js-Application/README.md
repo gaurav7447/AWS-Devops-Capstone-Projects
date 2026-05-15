@@ -26,7 +26,7 @@ The pipeline ensures faster releases, reduced manual effort, and consistent depl
 ---
 
 ## 🏗️ Architecture Flow
-itHub / CodeCommit
+GitHub / CodeCommit
 ↓
 AWS CodePipeline
 ↓
