@@ -1,0 +1,18 @@
+{
+  "serviceName": "flask-service",
+  "cluster": "flask-cluster",
+  "desiredCount": 1,
+  "launchType": "FARGATE",
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "assignPublicIp": "ENABLED",
+      "subnets": [
+        "subnet-xxx",
+        "subnet-yyy"
+      ],
+      "securityGroups": [
+        "sg-xxx"
+      ]
+    }
+  }
+}
