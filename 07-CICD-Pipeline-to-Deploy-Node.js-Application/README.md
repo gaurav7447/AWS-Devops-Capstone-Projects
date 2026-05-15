@@ -26,3 +26,12 @@ The pipeline ensures faster releases, reduced manual effort, and consistent depl
 ---
 
 ## 🏗️ Architecture Flow
+itHub / CodeCommit
+↓
+AWS CodePipeline
+↓
+AWS CodeBuild (Build & Test)
+↓
+Deploy Stage
+↓
+EC2 Instance / S3 Bucket
