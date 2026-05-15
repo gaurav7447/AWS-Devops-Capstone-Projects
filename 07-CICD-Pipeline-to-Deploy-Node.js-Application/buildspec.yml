@@ -5,19 +5,18 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - echo "Navigating to project folder"
-      # Changed from the long project name to the actual folder name
-      
+      - echo "Navigating to the actual app folder..."
+      # This path must match your GitHub folder structure exactly
+      - cd 07-CICD-Pipeline-to-Deploy-Node.js-Application/node-ci-cd-app
       - npm install
 
   build:
     commands:
       - echo "Build started"
-      # If you have tests or a build step, add them here:
-      # - npm test 
+      - npm run build --if-present
 
 artifacts:
-  # This must match the folder name above
-  base-directory: node-ci-cd-app
+  # This ensures the Deploy stage gets the files from the right folder
+  base-directory: 07-CICD-Pipeline-to-Deploy-Node.js-Application/node-ci-cd-app
   files:
     - '**/*'
