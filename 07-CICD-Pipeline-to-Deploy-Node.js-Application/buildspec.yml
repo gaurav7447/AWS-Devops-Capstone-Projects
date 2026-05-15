@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Navigating to project folder"
+      - cd 07-CICD-Pipeline-to-Deploy-Node.js-Application
+      - npm install
+
+  build:
+    commands:
+      - echo "Build started"
+
+artifacts:
+  base-directory: 07-CICD-Pipeline-to-Deploy-Node.js-Application
+  files:
+    - '**/*'
