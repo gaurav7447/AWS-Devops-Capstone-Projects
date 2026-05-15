@@ -6,14 +6,18 @@ phases:
       nodejs: 18
     commands:
       - echo "Navigating to project folder"
-      - cd 07-CICD-Pipeline-to-Deploy-Node.js-Application
+      # Changed from the long project name to the actual folder name
+      - cd node-ci-cd-app
       - npm install
 
   build:
     commands:
       - echo "Build started"
+      # If you have tests or a build step, add them here:
+      # - npm test 
 
 artifacts:
-  base-directory: 07-CICD-Pipeline-to-Deploy-Node.js-Application
+  # This must match the folder name above
+  base-directory: node-ci-cd-app
   files:
     - '**/*'
