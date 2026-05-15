@@ -7,7 +7,7 @@ phases:
     commands:
       - echo "Navigating to project folder"
       # Changed from the long project name to the actual folder name
-      - cd node-ci-cd-app
+      
       - npm install
 
   build:
