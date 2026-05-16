@@ -23,6 +23,8 @@
 ## Output
 
 Application successfully deployed on AWS ECS.
+<img width="1919" height="1025" alt="Final output" src="https://github.com/user-attachments/assets/3c55a69a-0f54-4158-923c-822f73ce5bf5" />
+
 
 ## Architecture
 
